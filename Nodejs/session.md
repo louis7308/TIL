@@ -1,3 +1,5 @@
+## 세션이란?
+
 쿠키와 달리 서버의 메모리에다가 사용자의 세션 데이터를 저장하고 웹 브라우저는 Session ID만을 가지고 있기 때문에 비교적 안전합니다.
 
 ```jsx
@@ -46,9 +48,9 @@ app.use(session({                                                (5)
 
 (4) 앞서 저장한 객체를 MySQLStore() 함수의 인자로 넘겨줍니다. 이 때 생성되는 객체를 sessionStore라는 변수에 저장합니다.
 
-(4) session() 미들웨어를 설치합니다. secret은 keyboard cat으로 랜덤한 값을 입력해줍니다. secret 값은 공개되어서는 안됩니다. resave와 saveUninitialized는 세션을 다시 저장하냐, 초기화하냐 정도의 옵션인 것 같은데 저도 잘 모르겠습니다.. 보통 false와 true로 설정한다고 합니다.
+(5) session() 미들웨어를 설치합니다. secret은 keyboard cat으로 랜덤한 값을 입력해줍니다. secret 값은 공개되어서는 안됩니다. resave와 saveUninitialized는 세션을 다시 저장하냐, 초기화하냐 정도의 옵션인 것 같은데 저도 잘 모르겠습니다.. 보통 false와 true로 설정한다고 합니다.
 
-(5) 저장소를 앞서 DB 연결로 생성된 sessionStore 객체로 지정합니다. (제가 지정한 DB에 session 테이블이 생성됨을 확인할 수 있습니다.)
+(6) 저장소를 앞서 DB 연결로 생성된 sessionStore 객체로 지정합니다. (제가 지정한 DB에 session 테이블이 생성됨을 확인할 수 있습니다.)
 
 ### session 사용하기
 
