@@ -7,7 +7,7 @@
 > **Model, View, Controller**의 약자이다
 > 하나의 애플리케이션 프로젝트를 구성할 때 그 구성요소를 세가지의 역활로 구분한 패턴이다.
 
-<img src ="../images/MVC예시.png" style=text-align: center>
+<img src ="../Img/MVC예시.png" style=text-align: center>
 
 > 위의 그림처럼 사용자가 CONTROLLER를 조작하면 CONTROLLER는 MODEL을 통해서 데이터를 가져오고 그 정보를 바탕으로 시각적인 표현을 담당하는 View를 제어해서 사용자에게 전단할게 된다.
 
